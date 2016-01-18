@@ -1,0 +1,1 @@
+﻿component {	// Default Action	function index() {					event.setView( 'services/index' );	}	function training() {		event.setView( 'services/training' );	}	function development() {		event.setView( 'services/development' );	}}

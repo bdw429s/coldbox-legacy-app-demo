@@ -1,0 +1,1 @@
+﻿component {	function coldbox() {		event.setView( 'products/coldbox' );	}}

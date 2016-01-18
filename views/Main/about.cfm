@@ -1,5 +1,3 @@
-<cfinclude template="header.cfm">
-
 <h1>About</h1>
 
 <p>
@@ -8,4 +6,7 @@
   learn more about how to slowly convert over to MVC without a complete rewrite up front.  The code is hosted <a href="https://github.com/bdw429s/coldbox-legacy-app-demo" target="_new">here</a> and pull requests are welcome.
 </p>
 
-<cfinclude template="footer.cfm">
+<h3 style="color:green">This request processed by ColdBox MVC</h3>
+
+This request is using the <strong>main.about</strong> event which runs the <strong>/views/main/about.cfm</strong> view.  The actual event is being set in the Application.cfc which
+allows us to still spoof the old file name in the URL.  This can be imoportant if you're not allowed to break existing links.   

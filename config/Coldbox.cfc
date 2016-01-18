@@ -31,6 +31,10 @@
 			handlerCaching 			= false,
 			eventCaching			= false
 		};
+		
+		interceptors = [
+			{ class="coldbox.system.interceptors.SES" }
+		];
 	
 	}
 

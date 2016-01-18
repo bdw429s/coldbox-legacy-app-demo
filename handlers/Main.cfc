@@ -1,1 +1,1 @@
-﻿component {	// Default Action --->	function index() {			prc.welcomeMessage = 'Welcome to ColdBox!';				event.setView( 'Main/index' );	}}
+﻿component {	// Default Action	function index() {					event.setView( 'Main/index' );	}	function about() {					// This will run /views/Main/about.cfm by convention	}	function contact() {					// This will run /views/Main/contact.cfm by convention	}}

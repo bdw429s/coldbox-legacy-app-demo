@@ -15,32 +15,7 @@ what URL paths should get processed by ColdBox or by the legacy app.  You can mo
 entire application will be converted over to ColdBox!
 </p>
 
-<p>	
-Let's take a look at the Application.cfc code:
-
-<pre>
-component extends='coldbox.system.Bootstrap' {
-	
-	// request start
-	public boolean function onRequestStart(String targetPage){
-		
-		// Determine if the URL path is destined for ColdBox.
-		if( findNoCase( 'index.cfm', listLast( arguments.targetPage, '/' ) ) ){
-			
-			// Verify ColdBox is loaded
-			reloadChecks();
-			
-			processColdBoxRequest();
-			// Returning false prevents the legacy code from also kicking in
-			return false;
-		}
-		
-		// Else proceed to legacy code
-		return true;
-	}
-
-}
-</pre>  
-</p>
+<h3 style="color:orange">This request processed by legacy code</h3>
+This hits the root <strong>index.cfm</strong> directly, but there is no path info so ColdBox doesn't touch it.
 
 <cfinclude template="footer.cfm">

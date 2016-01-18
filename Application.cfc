@@ -9,8 +9,27 @@ component extends='coldbox.system.Bootstrap' {
 	// request start
 	public boolean function onRequestStart(String targetPage){
 		
+		// Map physical files to events
+		// This will allow the old URL for the about page to remain unchanged from the URL.
+		// This is just an example to show how to do this in case you CAN'T break book marks.
+		// Of course, URL rewriting wold also be a valid way to solve this too.
+		var fileEventMap = {
+			'/about.cfm'			: 'main.about',
+			'/products/coldbox.cfm'	: 'products.coldbox'
+		};
+		
 		// Determine if the URL path is destined for ColdBox.
-		if( findNoCase( 'index.cfm', listLast( arguments.targetPage, '/' ) ) && false ){
+		if( 
+			// Coldbox is processing these files
+			fileEventMap.keyExists( arguments.targetPage ) ||
+			// Or any hit to the root index.cfm that has a path into (assumes use of SES)
+			( arguments.targetPage == '/index.cfm' && len( cgi.path_info) ) 
+			){
+				
+			// If the file exists in our map, use the event
+			if( fileEventMap.keyExists( arguments.targetPage ) ) {
+				url.event= fileEventMap[ arguments.targetPage ];
+			}
 			
 			// Verify ColdBox is loaded
 			reloadChecks();
