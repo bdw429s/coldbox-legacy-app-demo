@@ -2,8 +2,7 @@
     "name":"ColdBox Legacy App Demo",
     "version":"1.0.0",
     "author":"Brad Wood (brad@bradwood.com)",
-    "createPackageDirectory":true,
-    "packageDirectory":"",
+    "createPackageDirectory":false,
     "homepage":"https://github.com/bdw429s/coldbox-legacy-app-demo",
     "documentation":"https://github.com/bdw429s/coldbox-legacy-app-demo/blob/master/README.md",
     "repository":{
