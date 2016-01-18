@@ -5,6 +5,7 @@ Install this app with CommandBox like so:
 
 ```bash
 install bdw429s/coldbox-legacy-app-demo
+cd coldbox-legacy-app-demo/
 server start
 ```
 
