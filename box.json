@@ -1,8 +1,22 @@
 {
+    "name":"ColdBox Legacy App Demo",
+    "version":"1.0.0",
+    "author":"Brad Wood (brad@bradwood.com)",
+    "createPackageDirectory":true,
+    "packageDirectory":"",
+    "homepage":"https://github.com/bdw429s/coldbox-legacy-app-demo",
+    "documentation":"https://github.com/bdw429s/coldbox-legacy-app-demo/blob/master/README.md",
+    "repository":{
+        "type":"Git",
+        "URL":"git@github.com:bdw429s/coldbox-legacy-app-demo.git"
+    },
+    "bugs":"https://github.com/bdw429s/coldbox-legacy-app-demo/issues",
+    "slug":"coldbox-legacy-app-demo",
+    "shortDescription":"A sample app that is part legacy and part Coldbox MVC",
+    "type":"projects ",
+    "keywords":"Coldbox,legacy,FuseBox,ColdFusion",
+    "private":false,
     "dependencies":{
         "coldbox":"4.1.0+00002"
-    },
-    "installPaths":{
-        "coldbox":"coldbox"
     }
 }
