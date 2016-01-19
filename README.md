@@ -4,8 +4,8 @@ A sample app that is part legacy and part Coldbox MVC.
 Install this app with CommandBox like so:
 
 ```bash
+mkdir coldbox-legacy-app-demo --cd
 install bdw429s/coldbox-legacy-app-demo
-cd coldbox-legacy-app-demo/
 server start
 ```
 
