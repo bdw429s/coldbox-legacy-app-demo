@@ -16,6 +16,6 @@
     "keywords":"Coldbox,legacy,FuseBox,ColdFusion",
     "private":false,
     "dependencies":{
-        "coldbox":"4.1.0+00002"
+        "coldbox":"^4.1.0+00002"
     }
 }
