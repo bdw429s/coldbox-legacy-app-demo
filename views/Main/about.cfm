@@ -9,4 +9,4 @@
 <h3 style="color:green">This request processed by ColdBox MVC</h3>
 
 This request is using the <strong>main.about</strong> event which runs the <strong>/views/main/about.cfm</strong> view.  The actual event is being set in the Application.cfc which
-allows us to still spoof the old file name in the URL.  This can be imoportant if you're not allowed to break existing links.   
+allows us to still spoof the old file name in the URL.  This can be important if you're not allowed to break existing links.   
