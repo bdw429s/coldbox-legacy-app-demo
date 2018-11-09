@@ -12,29 +12,9 @@
 			reinitPassword			= "",
 			handlersIndexAutoReload = true,
 	
-			//Implicit Events
-			defaultEvent			= "",
-			requestStartHandler		= "",
-			requestEndHandler		= "",
-			applicationStartHandler = "",
-			applicationEndHandler	= "",
-			sessionStartHandler 	= "",
-			sessionEndHandler		= "",
-			missingTemplateHandler	= "",
-	
-			//Error/Exception Handling
-			exceptionHandler		= "",
-			onInvalidEvent			= "",
-			customErrorTemplate		= "",
-	
 			//Application Aspects
-			handlerCaching 			= false,
-			eventCaching			= false
+			handlerCaching 			= false
 		};
-		
-		interceptors = [
-			{ class="coldbox.system.interceptors.SES" }
-		];
 	
 	}
 

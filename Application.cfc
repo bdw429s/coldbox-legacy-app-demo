@@ -6,6 +6,9 @@ www.ortussolutions.com
 */
 component extends='coldbox.system.Bootstrap' {
 	
+	COLDBOX_APP_ROOT_PATH=expandPath( '/' );
+	COLDBOX_APP_MAPPING='/';
+
 	// request start
 	public boolean function onRequestStart(String targetPage){
 		
@@ -33,7 +36,6 @@ component extends='coldbox.system.Bootstrap' {
 			
 			// Verify ColdBox is loaded
 			reloadChecks();
-			
 			processColdBoxRequest();
 			// Returning false prevents the legacy code from also kicking in
 			return false;
