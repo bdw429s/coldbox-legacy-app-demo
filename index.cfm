@@ -11,7 +11,7 @@ from a subdirectory as a standalone application, but that isn't ideal if you wan
 <p>
 It's possible for ColdBox and your legacy code to live side-by-side in the same application context. The only requirement is that you use Application.cfc.
 In this example, our Application.cfc is extending the ColdBox bootstrap class, and the onRequestStart() method has a conditional statement that decides
-what URL paths should get processed by ColdBox or by the legacy app.  You can modify this conditional as you finish your conversion, until one day you're
+what URL paths should get processed by ColdBox or by the legacy app.  You can modify this conditional as you finish your conversion, until one day your
 entire application will be converted over to ColdBox!
 </p>
 
