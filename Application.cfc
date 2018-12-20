@@ -12,6 +12,9 @@ component extends='coldbox.system.Bootstrap' {
 	// request start
 	public boolean function onRequestStart(String targetPage){
 		
+		// Verify ColdBox is loaded
+		reloadChecks();
+			
 		// Map physical files to events
 		// This will allow the old URL for the about page to remain unchanged from the URL.
 		// This is just an example to show how to do this in case you CAN'T break book marks.
@@ -34,8 +37,6 @@ component extends='coldbox.system.Bootstrap' {
 				url.event= fileEventMap[ arguments.targetPage ];
 			}
 			
-			// Verify ColdBox is loaded
-			reloadChecks();
 			processColdBoxRequest();
 			// Returning false prevents the legacy code from also kicking in
 			return false;
