@@ -1,0 +1,6 @@
+component singleton {
+
+    function doSomething() {
+    }
+
+}

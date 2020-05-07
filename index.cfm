@@ -2,6 +2,9 @@
 
 <h1>ColdBox Legacy App Demo</h1>
 
+<!--- Access to WireBox from legacy page --->
+<cfset application.wirebox.getInstance( 'myService' ).doSomething() >
+
 <p>
 Welcome to a demo of how to integrate ColdBox into a legacy application that you don't want to rewrite from scratch in the first pass.  Your legacy application 
 might use FuseBox, or another framework, or it could simply be a basic site of stand-alone .cfm pages.  One can always run the ColdBox portions of the app

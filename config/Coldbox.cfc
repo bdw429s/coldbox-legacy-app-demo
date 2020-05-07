@@ -15,7 +15,27 @@
 			//Application Aspects
 			handlerCaching 			= false
 		};
+
+		environments = {
+			development : "^127\.0\.0\.1,localhost"
+		};
 	
+		logBox = {
+				appenders = {
+						coldboxTracer = { class="coldbox.system.logging.appenders.ConsoleAppender" }
+				},
+				root = { levelmax="INFO", appenders="*" },
+				info = [ "coldbox.system" ]
+		};
+
+		interceptors = [
+			{ class="interceptors.RequestLogger" }
+		];
+
+	}
+
+	function development(){
+			coldbox.customErrorTemplate = "/coldbox/system/includes/BugReport.cfm";
 	}
 
 }

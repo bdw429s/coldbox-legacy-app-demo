@@ -43,6 +43,8 @@ component extends='coldbox.system.Bootstrap' {
 		}
 		
 		// Else proceed to legacy code
+		application.cbController.getModuleService().loadMappings();
+		application.cbController.getInterceptorService().processState("preProcess");
 		return true;
 	}
 

@@ -48,8 +48,8 @@
 				</a>
 				<ul id="actions-submenu" class="dropdown-menu">
 					 <li><a href="http://coldbox.ortusbooks.com"><i class="glyphicon glyphicon-book"></i> Help Manual</a></li>
-					 <li><a href="mailto:bugs@coldbox.org?subject=DataBoss Bug Report"><i class="glyphicon glyphicon-fire"></i> Report a Bug</a></li>
-					 <li><a href="mailto:info@coldbox.org?subject=DataBoss Feedback"><i class="glyphicon glyphicon-bullhorn"></i> Send Us Feedback</a></li>
+					 <li><a href="https://ortussolutions.atlassian.net/browse/COLDBOX"><i class="glyphicon glyphicon-fire"></i> Report a Bug</a></li>
+					 <li><a href="mailto:info@coldbox.org?subject=ColdBox Feedback"><i class="glyphicon glyphicon-bullhorn"></i> Send Us Feedback</a></li>
 					 <li><a href="http://www.ortussolutions.com/products/coldbox"><i class="glyphicon glyphicon-home"></i> Professional Support</a></li>
 					 <li class="divider"></li>
 					 <li class="centered">
