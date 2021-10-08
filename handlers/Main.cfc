@@ -1,5 +1,5 @@
 ﻿component {
-	property name='myService' inject;
+	property name='MyService' inject;
 
 	// Default Action
 	function index() {
