@@ -16,7 +16,7 @@
     "keywords":"Coldbox,legacy,FuseBox,ColdFusion",
     "private":false,
     "dependencies":{
-        "coldbox":"^5"
+        "coldbox":"stable"
     },
     "installPaths":{
         "coldbox":"coldbox/"

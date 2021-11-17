@@ -47,5 +47,15 @@ component extends='coldbox.system.Bootstrap' {
 		application.cbController.getInterceptorService().processState("preProcess");
 		return true;
 	}
+	
+	// This method is only neccessary for Adobe due to this ticket:
+	// https://tracker.adobe.com/#/view/CF-4212568
+	// and it assumes you aren't proxying to CF behind IIS and having that proxy check  preemptively for the files' existence.
+	function onMissingTemplate( targetPage ) {
+        var onRequestStartResult = onRequestStart( targetPage );
+        if( ( isNull( onRequestStartResult ) || onRequestStartResult ) && variables.keyExists( 'onRequest' ) ) {
+            onRequest( targetPage );
+        }
+    }
 
 }
