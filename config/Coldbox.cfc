@@ -35,7 +35,7 @@
 	}
 
 	function development(){
-			coldbox.customErrorTemplate = "/coldbox/system/includes/BugReport.cfm";
+		coldbox.customErrorTemplate = "/coldbox/system/exceptions/Whoops.cfm";
 	}
 
 }
