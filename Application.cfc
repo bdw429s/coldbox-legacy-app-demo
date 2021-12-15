@@ -29,7 +29,7 @@ component extends='coldbox.system.Bootstrap' {
 			// Coldbox is processing these files
 			fileEventMap.keyExists( arguments.targetPage ) ||
 			// Or any hit to the root index.cfm that has a path into (assumes use of SES)
-			( arguments.targetPage == '/index.cfm' && len( cgi.path_info) ) 
+			( arguments.targetPage == '/index.cfm' && len( cgi.path_info.replaceNoCase( cgi.script_name, '' ) ) ) 
 			){
 				
 			// If the file exists in our map, use the event
